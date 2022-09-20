@@ -1,0 +1,8 @@
+{% extends 'base.html' %} {% block index %}
+
+<h1>Home Page</h1>
+
+<a href="{% url 'cart' %}">Cart</a>
+<a href="{% url 'checkout' %}">Checkout</a>
+
+{% endblock index %}

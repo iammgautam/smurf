@@ -1,0 +1,314 @@
+{% extends 'base.html' %}
+<!--prettier ignore-->
+{% load static %}
+<!--prettier ignore-->
+{% block css_link %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/profile.css' %}" />
+{% endblock css_link %}
+<!--prettier ignore-->
+{% block title %}Smurf Elite - Home{% endblock title %}
+<!--prettier ignore-->
+{% block body %}
+<!-- Carousal Images -->
+<div
+  id="carouselExampleFade"
+  class="carousel slide carousel-fade carousal-custom"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="{% static 'images/csgo.jpg' %}"
+        class="home-image d-block w-100"
+        alt="csgo"
+        height="700px"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'images/valorant.png' %}"
+        class="home-image d-block w-100"
+        alt="valorant"
+        height="700px"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static 'images/gtav.jpg' %}"
+        class="home-image d-block w-100"
+        alt="gtav"
+        height="700px"
+      />
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleFade"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleFade"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- ---------------------- -->
+<!-- ---------------------- -->
+<!-- Featured Games -->
+<!-- ---------------------- -->
+<!-- ---------------------- -->
+
+<div class="row featured-games">
+  <h1 class="page-title">Featured Games</h1>
+  <div class="col-12 m-auto">
+    <div class="owl-carousel owl-theme">
+      <div class="item mb-4">
+        <div class="card border-0 shadow">
+          <img
+            src="{% static 'images/csgo.jpg' %}"
+            alt=""
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title text-center">
+              <h4>CSGO</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card border-0 shadow">
+          <img
+            src="{% static 'images/gtav.jpg' %}"
+            alt=""
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title text-center">
+              <h4>Valorant</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card border-0 shadow">
+          <img
+            src="{% static 'images/valorant.png' %}"
+            alt=""
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title text-center">
+              <h4>GTA V</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ---------------------- -->
+<!-- ---------------------- -->
+<!-- FAQs HTML -->
+<!-- ---------------------- -->
+<!-- ---------------------- -->
+<div class="container-lg-12" style="padding: 0px 0px 0px 45px">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="page-title">Frequenlty Asked Questions (FAQs)</h1>
+      <div
+        class="accordion col-md-12"
+        id="accordionExample"
+      >
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="clearfix mb-0">
+              <a
+                class="btn btn-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+                ><i class="fa fa-chevron-circle-down"></i>Why Choose
+                Smurf Elite?</a
+              >
+            </h2>
+          </div>
+          <div
+            id="collapseOne"
+            class="collapse"
+            aria-labelledby="headingOne"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              <ul>
+                <li>
+                  Our goal is to satisfy our customers’ expectations. We strive
+                  to provide you with the highest quality products. Customer
+                  Satisfaction guaranteed!
+                </li>
+                <li>
+                  We assure you that you get the best experience and you’ll
+                  definitely continue shopping with us!
+                </li>
+                <li>
+                  Check out our price ranges and decide your comfortable pick!
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <a
+                class="btn btn-link collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+                ><i class="fa fa-chevron-circle-down"></i>Can I trust
+                Smurf Elite?</a
+              >
+            </h2>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              <ul>
+                <li>
+                  Our biggest victory would be gaining your trust. Our
+                  best-in-class service and products will definitely gain your
+                  trust!
+                </li>
+                <li>
+                  We provide excellent customer support and best in class
+                  products
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <a
+                class="btn btn-link collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+                ><i class="fa fa-chevron-circle-down"></i>What other accounts do
+                you sell?</a
+              >
+            </h2>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              We sell * CSGO, * GTA V, and * Valorant Accounts at the moment. Do
+              check them out.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <a
+                class="btn btn-link collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+                ><i class="fa fa-chevron-circle-down"></i>What are the
+                Benefits?</a
+              >
+            </h2>
+          </div>
+          <div
+            id="collapseFour"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              Our UI, Active Customer Support, and Lightning-fast delivery are
+              noteworthy and we provide offers frequently!
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <a
+                class="btn btn-link collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+                ><i class="fa fa-chevron-circle-down"></i>How will I get my
+                products?</a
+              >
+            </h2>
+          </div>
+          <div
+            id="collapseFive"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              The ordered accounts will be delivered to you by the given Email
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="p-5"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous"
+></script>
+<script>
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 15,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
+</script>
+<!--prettier ignore-->
+{% endblock body %}
+<!--prettier ignore-->

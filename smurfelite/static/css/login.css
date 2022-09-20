@@ -1,0 +1,29 @@
+/* LOGIN STYLES */
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+    top: 9vh;
+    position: absolute;
+    height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+.login {
+    background-size: contain;
+    background-position: center right;
+    overflow: hidden;
+    height: 100vh;
+    filter: blur(3.5px);
+    position: fixed;
+  }
+footer {
+    display: none;
+}
